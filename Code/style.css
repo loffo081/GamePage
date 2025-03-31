@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(Images/back-image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df7348, #2965e9);
+    font-size: 14px;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+    margin-left: -20px;
+}
+
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: #222;
+}
+
+.content p {
+    margin: 10px 0 30px;
+    color: #333;
+}
+
+.content .btn {
+    padding: 15px 80px;
+    font-size: 16px;
+}
+
+.side-menu {
+    position: absolute;
+    top: -5px;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 0;
+    background-color: rgb(182, 179, 177);
+    transition: 0.3s;
+    overflow: hidden;
+    z-index: 999;
+    border-radius: 10px;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 70px 0;
+    margin: 20px;
+}
+
+.side-menu li {
+    padding: 20px;
+    text-align: top;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.side-menu li:hover {
+    background-color: #b6a493;
+}
+
+.menu-icon {
+    margin-left: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    z-index: 1010;
+}
+
+.side-menu.open {
+    height: 100px;
+    width: 400px;
+}
